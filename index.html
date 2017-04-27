@@ -16,79 +16,74 @@
         <!-- ekko-lightbox -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.1.1/ekko-lightbox.css" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.1.1/ekko-lightbox.js"></script>
-	</head>
-    <body>
+        
+        <!-- Colorbox -->
+        <link rel="stylesheet" href="colorbox.css">
+        
+        <script src="jquery.colorbox-min.js"></script>
+	   </head>
+<body>
  <script src="myScript.js"></script>   
 <h1>My Gallery</h1>
 
-<div id="container"></div>
-<div id="images">
+
+<section>   
+    <figure>
+        <a class="gallery" alt="image01"> <img src="images/pic01.jpg"></a><figcaption>Description 01</figcaption>  
+    </figure>
+    <figure>
+        <a class="gallery" alt="image02"> <img src="images/pic02.jpg"></a><figcaption>Description 02</figcaption>  
+    </figure>
+    <figure>
+        <a class="gallery" alt="image03"> <img src="images/pic03.jpg"></a><figcaption>Description 03</figcaption>  
+    </figure>
+    <figure>
+        <a class="gallery" alt="image04"> <img src="images/pic04.jpg"></a><figcaption>Description 04</figcaption>  
+    </figure>
+    <figure>
+        <a class="gallery" alt="image05"> <img src="images/pic05.jpg"></a><figcaption>Description 05</figcaption>  
+    </figure>
+    <figure>
+        <a class="gallery" alt="image06"> <img src="images/pic06.jpg"></a><figcaption>Description 06</figcaption>  
+    </figure>
+    <figure>
+        <a class="gallery" alt="image07"> <img src="images/pic07.jpg"></a><figcaption>Description 07</figcaption>  
+    </figure>
+    <figure>
+        <a class="gallery" alt="image08"> <img src="images/pic08.jpg"></a><figcaption>Description 08</figcaption>  
+    </figure>
+    <figure>
+        <a class="gallery" alt="image09"> <img src="images/pic09.jpg"></a><figcaption>Description 09</figcaption>  
+    </figure>
+    <figure>
+        <a class="gallery" alt="image10"> <img src="images/pic10.jpg"></a><figcaption>Description 10</figcaption>  
+    </figure>
+    <figure>
+        <a class="gallery" alt="image11"> <img src="images/pic11.jpg"></a><figcaption>Description 11</figcaption>  
+    </figure>
+    <figure>
+        <a class="gallery" alt="image12"> <img src="images/pic12.jpg"></a><figcaption>Description 12</figcaption>  
+    </figure>
+    <figure>
+        <a class="gallery" alt="image13"> <img src="images/pic13.jpg"></a><figcaption>Description 13</figcaption>  
+    </figure>
+    <figure>
+        <a class="gallery" alt="image14"> <img src="images/pic14.jpg"></a><figcaption>Description 14</figcaption>  
+    </figure>
+    <figure>
+        <a class="gallery" alt="image15"> <img src="images/pic15.jpg"></a><figcaption>Description 15</figcaption>  
+    </figure>
+    <figure>
+        <a class="gallery" alt="image16"> <img src="images/pic16.jpg"></a><figcaption>Description 16</figcaption>  
+    </figure>
+    <figure>
+        <a class="gallery" alt="image17"> <img src="images/pic17.jpg"></a><figcaption>Description 17</figcaption>  
+    </figure>
     
-    <div class="item">
-        <img src="images/pic01.jpg">
-    </div>
-    <div class="item">
-        <img src="images/pic02.jpg">
-    </div>
-    <div class="item">
-        <img src="images/pic03.jpg">
-    </div>
-    <div class="item">
-        <img src="images/pic04.jpg">
-    </div>
-    <div class="item">
-        <img src="images/pic05.jpg">
-    </div>
-    <div class="item">
-        <img src="images/pic06.jpg">
-    </div>
-    <div class="item">
-        <img src="images/pic07.jpg">
-    </div>
-    <div class="item">
-        <img src="images/pic08.jpg">
-    </div>
-    <div class="item">
-        <img src="images/pic09.jpg">
-    </div>
-    <div class="item">
-        <img src="images/pic10.jpg">
-    </div>
-    <div class="item">
-        <img src="images/pic11.jpg">
-    </div>
-    <div class="item">
-        <img src="images/pic12.jpg">
-    </div>
-    <div class="item">
-        <img src="images/pic13.jpg">
-    </div>
-    <div class="item">
-        <img src="images/pic14.jpg">
-    </div>
-    <div class="item">
-        <img src="images/pic15.jpg">
-    </div>
-    <div class="item">
-        <img src="images/pic16.jpg">
-    </div>
-    <div class="item">
-        <img src="images/pic17.jpg">
-    </div>
-    <div class="item">
-        <img src="images/pic18.jpg">
-    </div>
-    <div class="item">
-        <img src="images/pic19.jpg">
-    </div>
-    <div class="item">
-        <img src="images/pic20.jpg">
-    </div>    
-</div>
-<p>
-    <script src="//masonry.desandro.com/masonry.pkgd.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/3.0.4/jquery.imagesloaded.js"></script>
-    
-        
+</section>
+
+    <script>
+      jQuery('a.gallery').colorbox();
+    </script>
 </body>
   </html>

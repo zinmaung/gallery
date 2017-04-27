@@ -1,3 +1,8 @@
+body, html, h1, p, div, a, img, section, nav, figure, figcaption, span{
+    margin: 0;
+    padding: 0;
+}
+
 h1{
     font-family: fantasy;
     display: block;
@@ -20,24 +25,56 @@ h1{
     -webkit-box-shadow: 0px 2px 6px 2px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 2px 6px 2px rgba(0,0,0,0.75);
     box-shadow: 0px 2px 6px 2px rgba(0,0,0,0.75);
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 body {
-    font-family: sans-serif;
+    
+    background-color: #BCBFBE;
 }
-#container {
-    background: #DDD;
-    max-width: 1000px;
+
+section{
+    width: 100%;
+    padding: 1rem 0;
 }
-.item {
-    width: 200px;
+
+figure {
+    width: calc(100% / 4);
     float: left;
+    margin-bottom: 1rem;
+    position: relative;
+    
 }
-.item img {
+figure a{
+    display: inline-block;
+    height: 100%;
+    margin-left: 1rem;
+    width: calc(100% - 2rem);
+}
+
+figure img{
+    width:100%;
+    vertical-align: middle;
+    margin-bottom: 0;
+}
+
+figure figcaption {
+    background: #E1E5E4;
+    color: #000000;
+    text-align: center;
+    padding: 0;
+    margin: 0 1rem 1rem;
+}
+
+section:: after, section::before{
+    content: "";
     display: block;
-    width: 99%;
 }
+
+section::after{
+    clear: both;
+}
+
 
 img {
   filter: gray; 
@@ -45,7 +82,7 @@ img {
     -webkit-box-shadow: 0px 2px 6px 2px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 2px 6px 2px rgba(0,0,0,0.75);
     box-shadow: 0px 2px 6px 2px rgba(0,0,0,0.75);
-    margin-bottom:20px;
+
 }
 
 img:hover {
@@ -53,3 +90,55 @@ img:hover {
   -webkit-filter: grayscale(0); 
  
 }
+
+
+@media only screen and (max-width: 1024px){
+    html{
+        font-size: 14px;
+    }
+    figure{
+        width: calc(100% / 3);
+    }
+}
+
+@media only screen and (max-width: 840px){
+    html{
+        font-size: 12px;
+    }
+    figure{
+        width: calc(100% / 3);
+    }
+}
+
+@media only screen and (max-width: 640px){
+    html{
+        font-size: 11px;
+    }
+    figure{
+        width: calc(100% / 2);
+    }
+}
+
+@media only screen and (max-width: 400px){
+    html{
+        font-size: 10px;
+    }
+    figure{
+        width: 100%;
+        margin: auto auto;
+        display: block;
+        float: none;
+    }
+}
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
